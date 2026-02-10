@@ -13,3 +13,9 @@ app.use(cors({
 	credentials: true
 }))
 app.use(morgan('dev'))
+
+
+app.use("/one", createProxyMiddleware({
+	target: 'http://localhost:4001/one',
+	changeOrigin: true
+}))

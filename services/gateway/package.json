@@ -5,22 +5,17 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "build": "tsc",
-    "start": "node dist/app.js",
-    "install-all": "ts-node-dev --transpile-only src/install-all.ts",
-    "uninstall-all": "ts-node-dev --transpile-only src/uninstall-all.ts"
+    "start": "node dist/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prashantshinde/cmp": "^1.0.3",
-    "cmp": "^1.0.3",
-    "concurrently": "^9.2.0",
     "cors": "^2.8.5",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
-    "gateway": "file:",
+    "gateway": "file:../..",
     "http-proxy-middleware": "^3.0.5",
     "mongoose": "^8.16.1",
     "morgan": "^1.10.0"
